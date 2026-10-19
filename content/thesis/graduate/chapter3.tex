@@ -1,39 +1,32 @@
 %% 第三章
 
-\chapter{算法示例}
-\chaptermark{算法示例}
+\chapter{面向低时延和低功耗的WLAN仿真平台设计与实现}
+\chaptermark{面向低时延和低功耗的WLAN仿真平台设计与实现}
+随着区域内通信设备数量，无线网络流量种类和规模的持续增长，未来网络对通信低时延、
+能量低功耗要求尤为迫切。然而，任何预研技术在迈向落地前都需要进行前期的仿真和验证，
+以评估其在实际网络环境中的性能表现，为后续的工程落地提供实验依据，可有效缩短开发流程。
+因此，一个优秀且可靠的仿真平台对于网络性能评估和优化具有重要意义。本章在课题组现有的
+链路级WLAN仿真平台的基础上，针对下一代WLAN的最新需求，设计和实现了粒子化接入技术、
+增强型EDCA接入技术和其对应的强化学习改进模块仿真，实现了具备低时延和低功耗保障能力的下一代WLAN仿真平台。
+本章首先介绍仿真平台的整体架构和设计思路，然后详细阐述低时延和低功耗保障功能的设计与实现，
+最后通过仿真验证展示平台的性能表现，结果表明该仿真平台能够有效支持下一代WLAN的低时延和低功耗需求，
+并且能够为后续的第四，第五章的研究提供可靠的实验基础。
+\section{仿真平台架构介绍}
+XXX
+\section{仿真平台设计}
+XXX
+\subsection{整体设计}
 
-\section{基于二分查找的有序数组检索}
+\subsection{低时延保障功能设计}
 
-本章给出一个算法环境的使用示例。假设输入为一个按升序排列的数组
-$A = \{a_1, a_2, \ldots, a_n\}$，目标是在数组中查找给定元素 $x$ 的位置。
-如\autoref{alg:graduate-binary-search}所示，二分查找每一步都将搜索区间缩小为原来的一半，
-因此具有较高的检索效率。
+\subsection{低功耗仿真功能设计}
 
-\begin{algorithm}[htbp]
-    \caption{二分查找算法示例}
-    \label{alg:graduate-binary-search}
-    \begin{algorithmic}[1]
-        \Require 升序数组 $A$，数组长度 $n$，待查找元素 $x$
-        \Ensure 若查找成功则返回元素下标，否则返回 $-1$
-        \State $left \gets 1$
-        \State $right \gets n$
-        \While{$left \leq right$}
-            \State $mid \gets \lfloor (left + right) / 2 \rfloor$
-            \If{$A[mid] = x$}
-                \State \Return $mid$
-            \ElsIf{$A[mid] < x$}
-                \State $left \gets mid + 1$
-            \Else
-                \State $right \gets mid - 1$
-            \EndIf
-        \EndWhile
-        \State \Return $-1$
-    \end{algorithmic}
-\end{algorithm}
+\section{仿真平台实现}
 
-\section{复杂度分析}
+\subsection{低时延保障功能实现}
 
-对于长度为 $n$ 的有序数组，\autoref{alg:graduate-binary-search} 在最坏情况下需要进行
-$O(\log n)$ 次比较，空间复杂度为 $O(1)$。该示例可用于展示模板中算法标题、
-编号、交叉引用以及伪代码排版效果。
+\subsection{低功耗仿真功能实现}
+
+\section{仿真平台验证}
+
+\section{本章小结}
