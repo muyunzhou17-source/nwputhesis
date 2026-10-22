@@ -65,13 +65,14 @@
       \nwpuSectionFont\thesection}{\nwpuSectionLabelSep}{}{}
     \titleformat{\subsection}[hang]{\nwpuSubsectionFont}{%
       \nwpuSubsectionFont\thesubsection}{\nwpuSectionLabelSep}{}{}
-    \titleformat{\subsubsection}[runin]{\nwpuSubsubsectionFont}{(\arabic{subsubsection})}{0pt}{}{}
+    \titleformat{\subsubsection}[hang]{\nwpuSubsubsectionFont}{%
+      \nwpuSubsubsectionFont\thesubsubsection}{\nwpuSectionLabelSep}{}{}
     \titleformat{\paragraph}[runin]{\nwpuParagraphFont}{\arabic{paragraph}）}{0pt}{}[：\hspace{0.5em}]
     \titleformat{\subparagraph}[runin]{\nwpuSubparagraphFont}{\roman{subparagraph}）}{0pt}{}[：\hspace{0.5em}]
     \titlespacing{\chapter}{0pt}{\nwpuChapterBeforeSkip}{\nwpuChapterAfterSkip}
     \titlespacing{\section}{0pt}{\nwpuSectionBeforeSkip}{\nwpuSectionAfterSkip}
     \titlespacing{\subsection}{0pt}{\nwpuSubsecBeforeSkip}{\nwpuSubsecAfterSkip}
-    \titlespacing{\subsubsection}{2em}{0pt}{0pt}
+    \titlespacing{\subsubsection}{0pt}{\nwpuSubsecBeforeSkip}{\nwpuSubsecAfterSkip}
     \titlespacing{\paragraph}{2em}{0pt}{0pt}
     \titlespacing{\subparagraph}{2em}{0pt}{0pt}
 }
