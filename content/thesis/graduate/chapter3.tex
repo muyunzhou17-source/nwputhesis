@@ -98,7 +98,7 @@ PHY层发送时主要作用为将数据包传递给信道，接收时数据包�
 接收条件的数据包传递给MAC层；信道主要负责对信号的衰落和干扰进行建模，实现不同节点之间的通信。
 各模块之间通过接口进行数据交换，实现数据包的传递和处理。主要架构如下图所示。
 \begin{figure}[htb]
-    \includegraphics[width=0.9\textwidth]{第三章仿真平台整体设计.pdf}
+    \includegraphics[width=0.8\textwidth]{第三章仿真平台整体设计.pdf}
     \caption{仿真平台整体设计}
     \label{3-2}
 \end{figure}
@@ -122,10 +122,21 @@ PHY层发送时主要作用为将数据包传递给信道，接收时数据包�
 本节将介绍仿真平台中低时延保障功能各模块的设计思路，包括粒子化接入模块设计，
 P-EDCA模块功能设计，以及P-EDCA结合DQN强化学习联合优化设计。
 \subsubsection{粒子化接入模块设计}
+下面将详细粒子化接入模块的基本设计架构以及与Wi-Fi基本功能模块之间的关系。
+粒子化接入模块主要有三部分内容组成：
+\begin{figure}[htb]
+    \includegraphics[width=0.5\textwidth]{第三章粒子化接入模块设计.pdf}
+    \caption{粒子化接入模块设计}
+    \label{3-3}
+\end{figure}
+（1）数据包的粒子化：
 
+（2）粒子化准入模块：
+（3）多目的地址聚合发包：
+（3）数据包超时处理：
 \subsubsection{P-EDCA模块设计}
 
-\subsubsection{P-EDCA强化学习模块设计}
+\subsubsection{强化学习模块设计}
 \subsection{低功耗功能设计}
 
 \section{仿真平台实现}
